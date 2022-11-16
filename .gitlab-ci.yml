@@ -34,5 +34,5 @@ build-job2:
 testjob :
     stage: test
     script :
-        - echo CI_COMMIT_MESSAGE
+        - echo $CI_COMMIT_MESSAGE
         
