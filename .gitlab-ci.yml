@@ -31,8 +31,13 @@ build-job2:
     script:
         - echo"fin de build-job-2"
 
-testjob :
+build-job3 :
     stage: build
     script :
         - echo $CI_COMMIT_MESSAGE
+
+test-job :
+    stage : test
+    script:
+        - ls
         
