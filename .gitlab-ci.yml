@@ -23,4 +23,4 @@ build-job:
     stage: build
     script:
         - echo "Compiling the code..."
-        - echo "Compile complete. test echo"
+        - echo "Compile complete."
