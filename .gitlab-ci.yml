@@ -32,10 +32,10 @@ test-job :
     script:
         - ls
 
- deploy_job :
+ deploy-job :
      stage: deploy
      script :
-         - docker build -t my-image:$CI_COMMIT_REF_SLUG 
+         - echo " deploy-job is finish "
      rules:
         - exists:
             - "File.md"       
