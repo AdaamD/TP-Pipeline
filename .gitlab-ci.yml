@@ -32,7 +32,7 @@ test-job :
     script:
         - ls
 
- deploy-job :
+deploy-job :
      stage: deploy
      script :
          - echo " deploy-job is finish "
