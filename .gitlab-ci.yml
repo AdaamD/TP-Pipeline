@@ -29,7 +29,7 @@ build-job:
 build-job2:
     stage: build
     script:
-        - echo"fin de build-job-2"
+        - echo "fin de build-job-2"
 
 testjob :
     stage: test
