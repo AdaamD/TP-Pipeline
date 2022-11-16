@@ -18,6 +18,7 @@
 
 stages:
     - build
+    - test 
 
 build-job:
     stage: build
@@ -28,5 +29,10 @@ build-job:
 build-job2:
     stage: build
     script:
-        - ls
-        - echo "fin build-job2"
+        - echo"fin de build-job-2"
+
+testjob :
+    stage: test
+    script :
+        - echo CI_COMMIT_MESSAGE
+        
