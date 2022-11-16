@@ -38,4 +38,4 @@ deploy-job :
          - echo " deploy-job is finish "
      rules:
         - exists:
-            - "File.md"       
+            - "READ.md"       
