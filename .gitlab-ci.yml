@@ -24,3 +24,9 @@ build-job:
     script:
         - echo "Compiling the code..."
         - echo "Compile complete."
+
+build-job2:
+    stage: build
+    script:
+        - ls
+        - echo "fin build-job2"
