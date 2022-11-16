@@ -19,6 +19,7 @@
 stages:
     - build
     - test 
+    - deploy 
 
 build-job:
     stage: build
@@ -26,18 +27,15 @@ build-job:
         - echo "Compiling the code..."
         - echo "Compile complete."
 
-build-job2:
-    stage: build
-    script:
-        - echo"fin de build-job-2"
-
-build-job3 :
-    stage: build
-    script :
-        - echo $CI_COMMIT_MESSAGE
-
 test-job :
     stage : test
     script:
         - ls
-        
+
+ deploy_job :
+     stage: deploy
+     script :
+         - docker build -t my-image:$CI_COMMIT_REF_SLUG 
+     rules:
+        - exists:
+            - "File.md"       
