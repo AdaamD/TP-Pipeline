@@ -29,3 +29,4 @@ build-job2:
     stage: build
     script:
         - ls
+        - touch timestamp
